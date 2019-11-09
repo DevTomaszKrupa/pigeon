@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .category-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    .category-item:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .shopping-card-icon {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        box-shadow: 0 0 10px grey;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+    .shopping-card-icon :hover {
+        cursor: pointer;
+    }
+    .shopping-card-icon-badge {
+        position: absolute;
+        top: 49%;
+        padding: 0.2rem 0.6rem;
+        right: 15px;
+        background-color: red;
+        color: white;
+        font-size: 15px;
+        border-radius: 50%;
+        font-weight: 500;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Witaj w sklepie Pigeon</h1>
+</div>
+<div class="category-box">
+    <div class="category-item">Pieczywo             </div>
+    <div class="category-item">Cukiernia            </div>
+    <div class="category-item">Nabiał               </div>
+    <div class="category-item">Warzywniak           </div>
+    <div class="category-item">Dania gotowe         </div>
+    <div class="category-item">Słodycze Ciastka     </div>
+    <div class="category-item">Artykuły spożywcze   </div>
+    <div class="category-item">Ryby                 </div>
+    <div class="category-item">Napoje               </div>
+    <div class="category-item">Mrożonki             </div>
+</div>
+<div id="productList">
+
+</div>
+
+<div class="shopping-card-icon">
+    <i style="font-size: 60px;" class="fa fa-shopping-cart"></i>
+</div>
+<span id="mainShoppingCardIcon" class="shopping-card-icon-badge">@ViewBag.ShoppingCardCount</span>
+
+<script>
+    $('.category-item').click((e) => {
+        $.ajax({
+            url: `/product/productlist?category=${e.target.textContent}`,
+            dataType: 'html',
+            success: function (data) {
+                $('#productList').html(data);
+            }
+        });
+    });
+</script>
