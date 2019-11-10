@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using Pigeon.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pigeon.PandaSystem;
+using RestEase;
 
 namespace Pigeon
 {
@@ -37,6 +39,8 @@ namespace Pigeon
             
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient(x => RestClient.For<IPandaApi>("https://localhost:44328/api"));
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
