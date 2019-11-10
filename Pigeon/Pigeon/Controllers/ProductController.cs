@@ -68,14 +68,7 @@ namespace Pigeon.Controllers
                 Products = products
             };
 
-            try
-            {
-                await _pandaApi.BulkUpdate(request);
-            }
-            catch (ApiException e)
-            {
-
-            }
+            await _pandaApi.BulkUpdate(request);
 
             return RedirectToAction("Index", "Home");
         }
