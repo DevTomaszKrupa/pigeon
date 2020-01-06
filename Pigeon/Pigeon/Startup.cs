@@ -41,8 +41,8 @@ namespace Pigeon
                 var cntx = sp.GetService<ApplicationDbContext>();
                 cntx.Database.Migrate();
 
-                services.AddTransient(x => RestClient.For<IPandaApi>("https://localhost:44328/api"));
-
+                services.AddTransient(x => RestClient.For<IPandaApi>("http://192.166.219.162:15800/api"));
+                
                 services.AddDefaultIdentity<IdentityUser>()
                     .AddDefaultUI(UIFramework.Bootstrap4)
                     .AddEntityFrameworkStores<ApplicationDbContext>();
