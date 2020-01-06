@@ -40,8 +40,8 @@ namespace Pigeon
                 var sp = services.BuildServiceProvider();
                 var cntx = sp.GetService<ApplicationDbContext>();
                 cntx.Database.Migrate();
-
-                services.AddTransient(x => RestClient.For<IPandaApi>("http://192.166.219.162:15800/api"));
+                var pandaUrl = "http://localhost:15800";
+                services.AddTransient(x => RestClient.For<IPandaApi>(pandaUrl));
                 
                 services.AddDefaultIdentity<IdentityUser>()
                     .AddDefaultUI(UIFramework.Bootstrap4)
@@ -54,7 +54,6 @@ namespace Pigeon
                 Console.WriteLine(e);
                 throw;
             }
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
