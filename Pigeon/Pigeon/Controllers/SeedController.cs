@@ -28,6 +28,7 @@ namespace Pigeon.Controllers
                 Price = x.Price
             }).ToList();
             _context.Products.AddRange(products);
+            _context.SaveChanges();
             return new ObjectResult("OK");
         }
 
