@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pigeon.Data;
 using Pigeon.Models;
 
 namespace Pigeon.Controllers
 {
+    [Authorize]
     public class ShoppingCardController : Controller
     {
         private readonly ApplicationDbContext _context;

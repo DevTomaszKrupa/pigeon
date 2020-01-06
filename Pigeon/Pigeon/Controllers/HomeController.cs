@@ -1,11 +1,13 @@
 ﻿using System.Diagnostics;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pigeon.Data;
 using Pigeon.Models;
 
 namespace Pigeon.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _context;

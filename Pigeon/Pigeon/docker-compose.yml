@@ -23,7 +23,7 @@ services:
   postgres_image:
     image: postgres:latest
     ports:
-      - "5432"
+      - "5432:5432"
     restart: always
     volumes:
       - db_volume:/var/lib/postgresql/data
@@ -35,4 +35,3 @@ services:
       - pigeon-dev
 volumes:
   db_volume:
-         

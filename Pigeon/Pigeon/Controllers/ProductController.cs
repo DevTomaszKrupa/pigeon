@@ -1,16 +1,15 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pigeon.Data;
 using Pigeon.Models;
 using Pigeon.PandaSystem;
 using Pigeon.PandaSystem.Models;
-using Pigeon.PublicAPI.Models;
-using RestEase;
 
 namespace Pigeon.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;

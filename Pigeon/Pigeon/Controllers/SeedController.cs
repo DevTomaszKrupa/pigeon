@@ -76,7 +76,7 @@ namespace Pigeon.Controllers
                 Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
                 Name = "Truskawkowy jogurt naturalny",
                 Price = 2.40m
-            },
+            }
         };
     }
 }
