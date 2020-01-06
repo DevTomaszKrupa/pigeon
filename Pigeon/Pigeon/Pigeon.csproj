@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="SeedProducts.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="SeedProducts.json" />
     <None Include="wwwroot\css\site.css" />
     <None Include="wwwroot\favicon.ico" />
     <None Include="wwwroot\js\site.js" />

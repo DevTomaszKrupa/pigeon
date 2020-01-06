@@ -1,0 +1,256 @@
+{
+  "products": [
+    {
+      "name": "Mleko 2.0%",
+      "description": "Mleko od polskich krów.",
+      "barcode": "NAB000",
+      "category": "Nabia³",
+      "price": "2.3"
+    },
+    {
+      "name": "Twaróg pó³t³usty",
+      "description": "Twaróg pó³t³usty z dodatkiem soli.",
+      "barcode": "NAB001",
+      "category": "Nabia³",
+      "price": "3.4"
+    },
+    {
+      "name": "Ser ¿ó³ty Gouda",
+      "description": "Kostka sera typu Gouda z mleczarni Krówka.",
+      "barcode": "NAB002",
+      "category": "Nabia³",
+      "price": "7.0"
+    },
+    {
+      "name": "Jogurt Skyr o smaku borówkowym",
+      "description": "Jogurt o delikatnej konsystencji z dodatkiem borówek.",
+      "barcode": "NAB003",
+      "category": "Nabia³",
+      "price": "2.1"
+    },
+    {
+      "name": "Mro¿one truskawki",
+      "description": "Najlepsze mro¿onki z firmy Wielki Sad.",
+      "barcode": "MR¯000",
+      "category": "Mro¿onki",
+      "price": "4.9"
+    },
+    {
+      "name": "Mro¿ona pizza z pieczarkami",
+      "description": "Gotowa pizza do przygotowania w piekarniku z pieczarkami i salami.",
+      "barcode": "MR¯001",
+      "category": "Mro¿onki",
+      "price": "8.7"
+    },
+    {
+      "name": "Mro¿ony szpinak",
+      "description": "Rozdrobniony szpinak, gotowy do Twojego dania!",
+      "barcode": "MR¯002",
+      "category": "Mro¿onki",
+      "price": "5.2"
+    },
+    {
+      "name": "Chiñska mieszanka - mro¿ona",
+      "description": "Zawiera grzyby moon, marchew, cebulê, bambus.",
+      "barcode": "MR¯003",
+      "category": "Mro¿onki",
+      "price": "4.1"
+    },
+    {
+      "name": "Sok z marchwii i banana",
+      "description": "Zdrowy sok dla Ciebie i Twojej rodziny!",
+      "barcode": "NAP000",
+      "category": "Napoje",
+      "price": "1.8"
+    },
+    {
+      "name": "Woda w szklanej butelce",
+      "description": "Woda z górskich Ÿróde³ w ekologicznym wydaniu.",
+      "barcode": "NAP001",
+      "category": "Napoje",
+      "price": "1.5"
+    },
+    {
+      "name": "Gazowany napój limonkowy",
+      "description": "Idealny na spotkania ze znajomymi, orzeŸwiaj¹cy.",
+      "barcode": "NAP002",
+      "category": "Napoje",
+      "price": "2.2"
+    },
+    {
+      "name": "Sok z mango 100%",
+      "description": "Naturalny, smaczny, zdrowy!",
+      "barcode": "NAP003",
+      "category": "Napoje",
+      "price": "2.5"
+    },
+    {
+      "name": "Sandacz",
+      "description": "Œwie¿y sandacz z pobliskich wód.",
+      "barcode": "RYB000",
+      "category": "Ryby",
+      "price": "25"
+    },
+    {
+      "name": "Wêdzony ³osoœ",
+      "description": "Ba³tycki, smaczny, wêdzony ³osoœ na Twój stó³.",
+      "barcode": "RYB001",
+      "category": "Ryby",
+      "price": "49"
+    },
+    {
+      "name": "Halibut niebieski",
+      "description": "Tusza halibuta, niezawodna jakoœæ.",
+      "barcode": "RYB002",
+      "category": "Ryby",
+      "price": "31"
+    },
+    {
+      "name": "Wêgorz",
+      "description": "Specja³. Szybszy od œledzia.",
+      "barcode": "RYB003",
+      "category": "Ryby",
+      "price": "88"
+    },
+    {
+      "name": "Batonik musli",
+      "description": "Zdrowy baton z daktylami, bez cukru.",
+      "barcode": "S£O000",
+      "category": "S³odycze",
+      "price": "1.7"
+    },
+    {
+      "name": "¯elki misie",
+      "description": "Kolorowe ¿elki z sokiem.",
+      "barcode": "S£O001",
+      "category": "S³odycze",
+      "price": "3.3"
+    },
+    {
+      "name": "Ciasteczka z galaretk¹",
+      "description": "Smaczne ciastka z galaretk¹ i biszkoptem, pokryte czekolad¹.",
+      "barcode": "S£O002",
+      "category": "S³odycze",
+      "price": "3.5"
+    },
+    {
+      "name": "Pierniczki toruñskie",
+      "description": "Lukrowane, prosto z torunia, œwi¹teczne.",
+      "barcode": "S£O003",
+      "category": "S³odycze",
+      "price": "4.6"
+    },
+    {
+      "name": "Pierogi ruskie",
+      "description": "Gotowe pierogi wed³ug tradycyjnej receptury.",
+      "barcode": "DNG000",
+      "category": "Dania gotowe",
+      "price": "6.1"
+    },
+    {
+      "name": "Pierogi z borówk¹",
+      "description": "S³odka borówka otulona delikatnym ciastem. Smacznego!",
+      "barcode": "DNG001",
+      "category": "Dania gotowe",
+      "price": "7.1"
+    },
+    {
+      "name": "Sajgonki, 6 szt.",
+      "description": "Kuchnia wietnamska w Polsce - zobacz jak!",
+      "barcode": "DNG002",
+      "category": "Dania gotowe",
+      "price": "5.3"
+    },
+    {
+      "name": "Ciasto francuskie",
+      "description": "Gotowe ciasto, do wykorzystania na rogaliki, paszteciki i pizzê!",
+      "barcode": "DNG003",
+      "category": "Dania gotowe",
+      "price": "2.4"
+    },
+    {
+      "name": "Banany",
+      "description": "Œwie¿e, ¿ó³ciutkie banany. Najlepsze.",
+      "barcode": "WAR000",
+      "category": "Warzywniak",
+      "price": "2.4"
+    },
+    {
+      "name": "Cebula",
+      "description": "Polskie warzywo w ka¿dym daniu.",
+      "barcode": "WAR001",
+      "category": "Warzywniak",
+      "price": "2.3"
+    },
+    {
+      "name": "Pomidor",
+      "description": "Pomidor!",
+      "barcode": "WAR002",
+      "category": "Warzywniak",
+      "price": "2.7"
+    },
+    {
+      "name": "Kapusta pekiñska",
+      "description": "Polska kapusta pekiñska, najlepsza do Gyrosa!",
+      "barcode": "WAR003",
+      "category": "Warzywniak",
+      "price": "3.1"
+    },
+    {
+      "name": "Bananowiec",
+      "description": "Biszkopt po³¹czony ze œmietanow¹ mas¹ bananow¹ i galaretk¹. Pyszny!",
+      "barcode": "CUK000",
+      "category": "Cukiernia",
+      "price": "3.0"
+    },
+    {
+      "name": "WZ-tka",
+      "description": "Tradycyjne ciasto, ponadczasowe.",
+      "barcode": "CUK001",
+      "category": "Cukiernia",
+      "price": "2.5"
+    },
+    {
+      "name": "Kruche ciasteczka z d¿emem",
+      "description": "Ma³e, okr¹g³e ciastka z d¿emem truskawkowym. Cena za kilogram.",
+      "barcode": "CUK002",
+      "category": "Cukiernia",
+      "price": "25.0"
+    },
+    {
+      "name": "Beza",
+      "description": "S³odka beza ze œmietan¹ w œrodku, s³odkoœci!",
+      "barcode": "CUK003",
+      "category": "Cukiernia",
+      "price": "2.8"
+    },
+    {
+      "name": "Chleb s³owiañski",
+      "description": "Chleb z chrupi¹c¹ skórk¹ na m¹ce pszennej.",
+      "barcode": "PIE000",
+      "category": "Pieczywo",
+      "price": "2.3"
+    },
+    {
+      "name": "Bu³ka kajzerka",
+      "description": "Okr¹g³e, tradycyjne bu³ki œniadaniowe.",
+      "barcode": "PIE001",
+      "category": "Pieczywo",
+      "price": "0.4"
+    },
+    {
+      "name": "Bagietka czosnkowa",
+      "description": "Œwie¿a bagietka z czosnkiem. Idealna do serów.",
+      "barcode": "PIE002",
+      "category": "Pieczywo",
+      "price": "1.3"
+    },
+    {
+      "name": "Rogal Œwiêtomarciñski",
+      "description": "Tradycyjny rogal z Poznania. Nie tylko 11 listopada!",
+      "barcode": "PIE003",
+      "category": "Pieczywo",
+      "price": "2.1"
+    }
+  ]
+}

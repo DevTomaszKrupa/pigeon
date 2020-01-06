@@ -6,6 +6,7 @@ using Pigeon.Data;
 using Pigeon.Models;
 using Pigeon.PandaSystem;
 using Pigeon.PandaSystem.Models;
+using ProductDto = Pigeon.PandaSystem.Models.ProductDto;
 
 namespace Pigeon.Controllers
 {

@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System.IO;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Pigeon.Data;
+using Pigeon.Models;
 
 namespace Pigeon.Controllers
 {
@@ -14,69 +17,27 @@ namespace Pigeon.Controllers
 
         public IActionResult Index()
         {
-            _context.AddRange(Products);
-            _context.SaveChanges();
+            var seed = ReadJsonFile();
+            var products = seed.Products.Select(x => new Product
+            {
+                Name = x.Name,
+                Barcode = x.Barcode,
+                Count = x.Count,
+                Category = x.Category,
+                Description = x.Description,
+                Price = x.Price
+            }).ToList();
+            _context.Products.AddRange(products);
             return new ObjectResult("OK");
         }
 
-        private List<Product> Products = new List<Product>
+        private SeedData ReadJsonFile()
         {
-            new Product
+            using (var r = new StreamReader("SeedProducts.json"))
             {
-                Barcode = "NB001",
-                Category = "Nabiał",
-                Description = "Mleko 2% od polskich krów, wolne od GMO, bezglutenowe",
-                Name = "Melko 2% Krasnystaw",
-                Price = 1.99m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
-            },
-            new Product
-            {
-                Barcode = "NB002",
-                Category = "Nabiał",
-                Description = "Jogurt naturalny, zawiera kolektury bakterii, smak truskawkowy",
-                Name = "Truskawkowy jogurt naturalny",
-                Price = 2.40m
+                var json = r.ReadToEnd();
+                return JsonConvert.DeserializeObject<SeedData>(json);
             }
-        };
+        }
     }
 }
