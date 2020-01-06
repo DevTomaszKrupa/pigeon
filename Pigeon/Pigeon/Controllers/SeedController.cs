@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Pigeon.Data;
@@ -28,6 +29,14 @@ namespace Pigeon.Controllers
                 Price = x.Price
             }).ToList();
             _context.Products.AddRange(products);
+            _context.SaveChanges();
+            return new ObjectResult("OK");
+        }
+
+        public IActionResult Truncate()
+        {
+            var allItems = _context.Products.ToList();
+            _context.Products.RemoveRange(allItems);
             _context.SaveChanges();
             return new ObjectResult("OK");
         }

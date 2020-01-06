@@ -1,256 +1,292 @@
-{
+Ôªø{
   "products": [
     {
       "name": "Mleko 2.0%",
-      "description": "Mleko od polskich krÛw.",
+      "description": "Mleko od polskich kr√≥w.",
       "barcode": "NAB000",
-      "category": "Nabia≥",
-      "price": "2.3"
+      "category": "Nabia≈Ç",
+      "price": "2.3",
+      "count": 2
     },
     {
-      "name": "TwarÛg pÛ≥t≥usty",
-      "description": "TwarÛg pÛ≥t≥usty z dodatkiem soli.",
+      "name": "Twar√≥g p√≥≈Çt≈Çusty",
+      "description": "Twar√≥g p√≥≈Çt≈Çusty z dodatkiem soli.",
       "barcode": "NAB001",
-      "category": "Nabia≥",
-      "price": "3.4"
+      "category": "Nabia≈Ç",
+      "price": "3.4",
+      "count": 3
     },
     {
-      "name": "Ser øÛ≥ty Gouda",
-      "description": "Kostka sera typu Gouda z mleczarni KrÛwka.",
+      "name": "Ser ≈º√≥≈Çty Gouda",
+      "description": "Kostka sera typu Gouda z mleczarni Kr√≥wka.",
       "barcode": "NAB002",
-      "category": "Nabia≥",
-      "price": "7.0"
+      "category": "Nabia≈Ç",
+      "price": "7.0",
+      "count": 5
     },
     {
-      "name": "Jogurt Skyr o smaku borÛwkowym",
-      "description": "Jogurt o delikatnej konsystencji z dodatkiem borÛwek.",
+      "name": "Jogurt Skyr o smaku bor√≥wkowym",
+      "description": "Jogurt o delikatnej konsystencji z dodatkiem bor√≥wek.",
       "barcode": "NAB003",
-      "category": "Nabia≥",
-      "price": "2.1"
+      "category": "Nabia≈Ç",
+      "price": "2.1",
+      "count": 10
     },
     {
-      "name": "Mroøone truskawki",
-      "description": "Najlepsze mroøonki z firmy Wielki Sad.",
-      "barcode": "MRØ000",
-      "category": "Mroøonki",
-      "price": "4.9"
+      "name": "Mro≈ºone truskawki",
+      "description": "Najlepsze mro≈ºonki z firmy Wielki Sad.",
+      "barcode": "MR≈ª000",
+      "category": "Mro≈ºonki",
+      "price": "4.9",
+      "count": 5
     },
     {
-      "name": "Mroøona pizza z pieczarkami",
+      "name": "Mro≈ºona pizza z pieczarkami",
       "description": "Gotowa pizza do przygotowania w piekarniku z pieczarkami i salami.",
-      "barcode": "MRØ001",
-      "category": "Mroøonki",
-      "price": "8.7"
+      "barcode": "MR≈ª001",
+      "category": "Mro≈ºonki",
+      "price": "8.7",
+      "count": 4
     },
     {
-      "name": "Mroøony szpinak",
+      "name": "Mro≈ºony szpinak",
       "description": "Rozdrobniony szpinak, gotowy do Twojego dania!",
-      "barcode": "MRØ002",
-      "category": "Mroøonki",
-      "price": "5.2"
+      "barcode": "MR≈ª002",
+      "category": "Mro≈ºonki",
+      "price": "5.2",
+      "count": 6
     },
     {
-      "name": "ChiÒska mieszanka - mroøona",
-      "description": "Zawiera grzyby moon, marchew, cebulÍ, bambus.",
-      "barcode": "MRØ003",
-      "category": "Mroøonki",
-      "price": "4.1"
+      "name": "Chi≈Ñska mieszanka - mro≈ºona",
+      "description": "Zawiera grzyby moon, marchew, cebulƒô, bambus.",
+      "barcode": "MR≈ª003",
+      "category": "Mro≈ºonki",
+      "price": "4.1",
+      "count": 8
     },
     {
       "name": "Sok z marchwii i banana",
       "description": "Zdrowy sok dla Ciebie i Twojej rodziny!",
       "barcode": "NAP000",
       "category": "Napoje",
-      "price": "1.8"
+      "price": "1.8",
+      "count": 7
     },
     {
       "name": "Woda w szklanej butelce",
-      "description": "Woda z gÛrskich ürÛde≥ w ekologicznym wydaniu.",
+      "description": "Woda z g√≥rskich ≈∫r√≥de≈Ç w ekologicznym wydaniu.",
       "barcode": "NAP001",
       "category": "Napoje",
-      "price": "1.5"
+      "price": "1.5",
+      "count": 20
     },
     {
-      "name": "Gazowany napÛj limonkowy",
-      "description": "Idealny na spotkania ze znajomymi, orzeüwiajπcy.",
+      "name": "Gazowany nap√≥j limonkowy",
+      "description": "Idealny na spotkania ze znajomymi, orze≈∫wiajƒÖcy.",
       "barcode": "NAP002",
       "category": "Napoje",
-      "price": "2.2"
+      "price": "2.2",
+      "count": 5
     },
     {
       "name": "Sok z mango 100%",
       "description": "Naturalny, smaczny, zdrowy!",
       "barcode": "NAP003",
       "category": "Napoje",
-      "price": "2.5"
+      "price": "2.5",
+      "count": 10
     },
     {
       "name": "Sandacz",
-      "description": "åwieøy sandacz z pobliskich wÛd.",
+      "description": "≈öwie≈ºy sandacz z pobliskich w√≥d.",
       "barcode": "RYB000",
       "category": "Ryby",
-      "price": "25"
+      "price": "25",
+      "count": 4
     },
     {
-      "name": "WÍdzony ≥osoú",
-      "description": "Ba≥tycki, smaczny, wÍdzony ≥osoú na TwÛj stÛ≥.",
+      "name": "Wƒôdzony ≈Çoso≈õ",
+      "description": "Ba≈Çtycki, smaczny, wƒôdzony ≈Çoso≈õ na Tw√≥j st√≥≈Ç.",
       "barcode": "RYB001",
       "category": "Ryby",
-      "price": "49"
+      "price": "49",
+      "count": 12
     },
     {
       "name": "Halibut niebieski",
-      "description": "Tusza halibuta, niezawodna jakoúÊ.",
+      "description": "Tusza halibuta, niezawodna jako≈õƒá.",
       "barcode": "RYB002",
       "category": "Ryby",
-      "price": "31"
+      "price": "31",
+      "count": 0
     },
     {
-      "name": "WÍgorz",
-      "description": "Specja≥. Szybszy od úledzia.",
+      "name": "Wƒôgorz",
+      "description": "Specja≈Ç. Szybszy od ≈õledzia.",
       "barcode": "RYB003",
       "category": "Ryby",
-      "price": "88"
+      "price": "88",
+      "count": 0
     },
     {
       "name": "Batonik musli",
       "description": "Zdrowy baton z daktylami, bez cukru.",
-      "barcode": "S£O000",
-      "category": "S≥odycze",
-      "price": "1.7"
+      "barcode": "S≈ÅO000",
+      "category": "S≈Çodycze",
+      "price": "1.7",
+      "count": 0
     },
     {
-      "name": "Øelki misie",
-      "description": "Kolorowe øelki z sokiem.",
-      "barcode": "S£O001",
-      "category": "S≥odycze",
-      "price": "3.3"
+      "name": "≈ªelki misie",
+      "description": "Kolorowe ≈ºelki z sokiem.",
+      "barcode": "S≈ÅO001",
+      "category": "S≈Çodycze",
+      "price": "3.3",
+      "count": 0
     },
     {
-      "name": "Ciasteczka z galaretkπ",
-      "description": "Smaczne ciastka z galaretkπ i biszkoptem, pokryte czekoladπ.",
-      "barcode": "S£O002",
-      "category": "S≥odycze",
-      "price": "3.5"
+      "name": "Ciasteczka z galaretkƒÖ",
+      "description": "Smaczne ciastka z galaretkƒÖ i biszkoptem, pokryte czekoladƒÖ.",
+      "barcode": "S≈ÅO002",
+      "category": "S≈Çodycze",
+      "price": "3.5",
+      "count": 2
     },
     {
-      "name": "Pierniczki toruÒskie",
-      "description": "Lukrowane, prosto z torunia, úwiπteczne.",
-      "barcode": "S£O003",
-      "category": "S≥odycze",
-      "price": "4.6"
+      "name": "Pierniczki toru≈Ñskie",
+      "description": "Lukrowane, prosto z torunia, ≈õwiƒÖteczne.",
+      "barcode": "S≈ÅO003",
+      "category": "S≈Çodycze",
+      "price": "4.6",
+      "count": 2
     },
     {
       "name": "Pierogi ruskie",
-      "description": "Gotowe pierogi wed≥ug tradycyjnej receptury.",
+      "description": "Gotowe pierogi wed≈Çug tradycyjnej receptury.",
       "barcode": "DNG000",
       "category": "Dania gotowe",
-      "price": "6.1"
+      "price": "6.1",
+      "count": 2
     },
     {
-      "name": "Pierogi z borÛwkπ",
-      "description": "S≥odka borÛwka otulona delikatnym ciastem. Smacznego!",
+      "name": "Pierogi z bor√≥wkƒÖ",
+      "description": "S≈Çodka bor√≥wka otulona delikatnym ciastem. Smacznego!",
       "barcode": "DNG001",
       "category": "Dania gotowe",
-      "price": "7.1"
+      "price": "7.1",
+      "count": 0
     },
     {
       "name": "Sajgonki, 6 szt.",
       "description": "Kuchnia wietnamska w Polsce - zobacz jak!",
       "barcode": "DNG002",
       "category": "Dania gotowe",
-      "price": "5.3"
+      "price": "5.3",
+      "count": 0
     },
     {
       "name": "Ciasto francuskie",
-      "description": "Gotowe ciasto, do wykorzystania na rogaliki, paszteciki i pizzÍ!",
+      "description": "Gotowe ciasto, do wykorzystania na rogaliki, paszteciki i pizzƒô!",
       "barcode": "DNG003",
       "category": "Dania gotowe",
-      "price": "2.4"
+      "price": "2.4",
+      "count": 0
     },
     {
       "name": "Banany",
-      "description": "åwieøe, øÛ≥ciutkie banany. Najlepsze.",
+      "description": "≈öwie≈ºe, ≈º√≥≈Çciutkie banany. Najlepsze.",
       "barcode": "WAR000",
       "category": "Warzywniak",
-      "price": "2.4"
+      "price": "2.4",
+      "count": 0
     },
     {
       "name": "Cebula",
-      "description": "Polskie warzywo w kaødym daniu.",
+      "description": "Polskie warzywo w ka≈ºdym daniu.",
       "barcode": "WAR001",
       "category": "Warzywniak",
-      "price": "2.3"
+      "price": "2.3",
+      "count": 22
     },
     {
       "name": "Pomidor",
       "description": "Pomidor!",
       "barcode": "WAR002",
       "category": "Warzywniak",
-      "price": "2.7"
+      "price": "2.7",
+      "count": 10
     },
     {
-      "name": "Kapusta pekiÒska",
-      "description": "Polska kapusta pekiÒska, najlepsza do Gyrosa!",
+      "name": "Kapusta peki≈Ñska",
+      "description": "Polska kapusta peki≈Ñska, najlepsza do Gyrosa!",
       "barcode": "WAR003",
       "category": "Warzywniak",
-      "price": "3.1"
+      "price": "3.1",
+      "count": 7
     },
     {
       "name": "Bananowiec",
-      "description": "Biszkopt po≥πczony ze úmietanowπ masπ bananowπ i galaretkπ. Pyszny!",
+      "description": "Biszkopt po≈ÇƒÖczony ze ≈õmietanowƒÖ masƒÖ bananowƒÖ i galaretkƒÖ. Pyszny!",
       "barcode": "CUK000",
       "category": "Cukiernia",
-      "price": "3.0"
+      "price": "3.0",
+      "count": 2
     },
     {
       "name": "WZ-tka",
       "description": "Tradycyjne ciasto, ponadczasowe.",
       "barcode": "CUK001",
       "category": "Cukiernia",
-      "price": "2.5"
+      "price": "2.5",
+      "count": 0
     },
     {
-      "name": "Kruche ciasteczka z døemem",
-      "description": "Ma≥e, okrπg≥e ciastka z døemem truskawkowym. Cena za kilogram.",
+      "name": "Kruche ciasteczka z d≈ºemem",
+      "description": "Ma≈Çe, okrƒÖg≈Çe ciastka z d≈ºemem truskawkowym. Cena za kilogram.",
       "barcode": "CUK002",
       "category": "Cukiernia",
-      "price": "25.0"
+      "price": "25.0",
+      "count": 5
     },
     {
       "name": "Beza",
-      "description": "S≥odka beza ze úmietanπ w úrodku, s≥odkoúci!",
+      "description": "S≈Çodka beza ze ≈õmietanƒÖ w ≈õrodku, s≈Çodko≈õci!",
       "barcode": "CUK003",
       "category": "Cukiernia",
-      "price": "2.8"
+      "price": "2.8",
+      "count": 2
     },
     {
-      "name": "Chleb s≥owiaÒski",
-      "description": "Chleb z chrupiπcπ skÛrkπ na mπce pszennej.",
+      "name": "Chleb s≈Çowia≈Ñski",
+      "description": "Chleb z chrupiƒÖcƒÖ sk√≥rkƒÖ na mƒÖce pszennej.",
       "barcode": "PIE000",
       "category": "Pieczywo",
-      "price": "2.3"
+      "price": "2.3",
+      "count": 5
     },
     {
-      "name": "Bu≥ka kajzerka",
-      "description": "Okrπg≥e, tradycyjne bu≥ki úniadaniowe.",
+      "name": "Bu≈Çka kajzerka",
+      "description": "OkrƒÖg≈Çe, tradycyjne bu≈Çki ≈õniadaniowe.",
       "barcode": "PIE001",
       "category": "Pieczywo",
-      "price": "0.4"
+      "price": "0.4",
+      "count": 10
     },
     {
       "name": "Bagietka czosnkowa",
-      "description": "åwieøa bagietka z czosnkiem. Idealna do serÛw.",
+      "description": "≈öwie≈ºa bagietka z czosnkiem. Idealna do ser√≥w.",
       "barcode": "PIE002",
       "category": "Pieczywo",
-      "price": "1.3"
+      "price": "1.3",
+      "count": 7
     },
     {
-      "name": "Rogal åwiÍtomarciÒski",
+      "name": "Rogal ≈öwiƒôtomarci≈Ñski",
       "description": "Tradycyjny rogal z Poznania. Nie tylko 11 listopada!",
       "barcode": "PIE003",
       "category": "Pieczywo",
-      "price": "2.1"
+      "price": "2.1",
+      "count": 4
     }
   ]
 }
