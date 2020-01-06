@@ -40,7 +40,7 @@ namespace Pigeon
                 var sp = services.BuildServiceProvider();
                 var cntx = sp.GetService<ApplicationDbContext>();
                 cntx.Database.Migrate();
-                var pandaUrl = "http://localhost:15800";
+                var pandaUrl = "http://127.0.0.1:15800";
                 services.AddTransient(x => RestClient.For<IPandaApi>(pandaUrl));
                 
                 services.AddDefaultIdentity<IdentityUser>()
