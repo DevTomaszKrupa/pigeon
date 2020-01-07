@@ -18,7 +18,7 @@ services:
       DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=pigeon;username=postgres;password=aaaaaaaaa"
       ASPNETCORE_ENVIRONMENT: Development
     networks:
-      - pigeon-dev  
+      - pigeon-dev
   
   postgres_image:
     image: postgres:latest
