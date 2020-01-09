@@ -35,14 +35,15 @@ namespace Pigeon
                     options.MinimumSameSitePolicy = SameSiteMode.None;
                 });
 
-                var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+                var connectionString =
+                    "host=postgres_image;port=5432;database=pigeon;username=postgres;password=aaaaaaaaa";
                 //connectionString =
                 //    "host=192.166.219.162;port=5432;database=pigeon;username=postgres;password=aaaaaaaaa";
                 services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
                 var sp = services.BuildServiceProvider();
                 var cntx = sp.GetService<ApplicationDbContext>();
                 cntx.Database.Migrate();
-                var pandaUrl = "http://localhost:15800/api";
+                var pandaUrl = "http://panda-api:15800/api";
                 services.AddTransient(x => RestClient.For<IPandaApi>(pandaUrl));
                 
                 services.AddDefaultIdentity<IdentityUser>()
