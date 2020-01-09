@@ -1,9 +1,5 @@
 version: '3.4'
 
-networks:
-  pigeon-dev:
-    driver: bridge 
-
 services:
   pigeon:
     image: pigeon:latest
@@ -18,7 +14,7 @@ services:
       DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=pigeon;username=postgres;password=aaaaaaaaa"
       ASPNETCORE_ENVIRONMENT: Development
     networks:
-      - pigeon-dev
+      - shared
   
   postgres_image:
     image: postgres:latest
@@ -32,6 +28,11 @@ services:
       POSTGRES_PASSWORD: "aaaaaaaaa"
       POSTGRES_DB: "pigeon"
     networks:
-      - pigeon-dev
+      - shared
 volumes:
   db_volume:
+  
+networks:
+  shared: 
+    external:
+      name: shared
