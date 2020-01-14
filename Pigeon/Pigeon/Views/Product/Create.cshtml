@@ -1,7 +1,7 @@
 ﻿@model Pigeon.Models.CreateProduct
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Utwórz nowy produkt";
 }
 
 <hr />
@@ -10,37 +10,56 @@
         <form asp-action="CreateConfirmed" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label class="control-label">Nazwa</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label class="control-label">Opis</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Barcode" class="control-label"></label>
+                <label class="control-label">Kod kreskowy</label>
                 <input asp-for="Barcode" class="form-control" />
                 <span asp-validation-for="Barcode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Count" class="control-label"></label>
+                <label class="control-label">Ilość</label>
                 <input asp-for="Count" class="form-control" />
                 <span asp-validation-for="Count" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label class="control-label">Cena</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
+                <label class="control-label">Kategoria</label>
+
+                @{
+                    var listItems = new List<SelectListItem>();
+                    listItems.Add(new SelectListItem { Text = "Pieczywo", Value = "Pieczywo" });
+                    listItems.Add(new SelectListItem { Text = "Cukiernia", Value = "Cukiernia" });
+                    listItems.Add(new SelectListItem { Text = "Nabiał", Value = "Nabiał" });
+                    listItems.Add(new SelectListItem { Text = "Warzywniak", Value = "Warzywniak" });
+                    listItems.Add(new SelectListItem { Text = "Dania gotowe", Value = "Dania gotowe" });
+                    listItems.Add(new SelectListItem { Text = "Słodycze", Value = "Słodycze" });
+                    listItems.Add(new SelectListItem { Text = "Ryby", Value = "Ryby" });
+                    listItems.Add(new SelectListItem { Text = "Napoje", Value = "Napoje" });
+                    listItems.Add(new SelectListItem { Text = "Mrożonki", Value = "Mrożonki" });
+                }
+
+                @Html.DropDownListFor(
+                    model => model.Category,
+                    listItems,
+                    "Wybierz kategorię...",
+                    new { @class = "form-control" })
+
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="CreateConfirmed" class="btn btn-primary" />
+                <input type="submit" value="Utwórz" class="btn btn-primary" />
             </div>
         </form>
     </div>

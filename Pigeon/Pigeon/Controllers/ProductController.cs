@@ -28,8 +28,7 @@ namespace Pigeon.Controllers
             var productList = _context.Products.Where(x => x.Category == category).ToList();
             return PartialView(productList);
         }
-
-
+        
         public IActionResult Create()
         {
             return View(new CreateProduct());

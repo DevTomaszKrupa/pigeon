@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pigeon", "Pigeon\Pigeon.csproj", "{651974D3-6C79-48C9-BEDE-47ABF18D016C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pigeon", "Pigeon\Pigeon.csproj", "{651974D3-6C79-48C9-BEDE-47ABF18D016C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{E1053FA7-DACE-4455-9D15-3891D4A5851C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{94404C10-ED23-4EEC-A90D-7FE8165BC59B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,10 @@ Global
 		{651974D3-6C79-48C9-BEDE-47ABF18D016C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{651974D3-6C79-48C9-BEDE-47ABF18D016C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{651974D3-6C79-48C9-BEDE-47ABF18D016C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94404C10-ED23-4EEC-A90D-7FE8165BC59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94404C10-ED23-4EEC-A90D-7FE8165BC59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94404C10-ED23-4EEC-A90D-7FE8165BC59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94404C10-ED23-4EEC-A90D-7FE8165BC59B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

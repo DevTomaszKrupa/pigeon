@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  pigeon:
+    image: pigeon:latest
+    depends_on:
+      - "postgres_image"
+    build:
+      context: .
+      dockerfile: 'Pigeon/Dockerfile'
+    ports:
+      - "14805:80"     
+    environment:
+      DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=pigeon;username=postgres;password=aaaaaaaaa"
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - shared
+  
+  postgres_image:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "aaaaaaaaa"
+      POSTGRES_DB: "pigeon"
+    networks:
+      - shared
+volumes:
+  db_volume:
+  
+networks:
+  shared: 
+    external:
+      name: shared

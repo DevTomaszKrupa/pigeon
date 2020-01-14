@@ -41,26 +41,41 @@
     <h1 class="display-4">Witaj w sklepie Pigeon</h1>
 </div>
 <div class="category-box">
-    <div class="category-item">Pieczywo             </div>
-    <div class="category-item">Cukiernia            </div>
-    <div class="category-item">Nabiał               </div>
-    <div class="category-item">Warzywniak           </div>
-    <div class="category-item">Dania gotowe         </div>
-    <div class="category-item">Słodycze     </div>
-    <div class="category-item">Ryby                 </div>
-    <div class="category-item">Napoje               </div>
-    <div class="category-item">Mrożonki             </div>
+    <div class="category-item">Pieczywo</div>
+    <div class="category-item">Cukiernia</div>
+    <div class="category-item">Nabiał</div>
+    <div class="category-item">Warzywniak</div>
+    <div class="category-item">Dania gotowe</div>
+    <div class="category-item">Słodycze</div>
+    <div class="category-item">Ryby</div>
+    <div class="category-item">Napoje</div>
+    <div class="category-item">Mrożonki</div>
 </div>
 <div id="productList">
 
 </div>
 
-<div class="shopping-card-icon">
+<div class="shopping-card-icon" id="mainShoppingCardBox">
     <i style="font-size: 60px;" class="fa fa-shopping-cart"></i>
 </div>
 <span id="mainShoppingCardIcon" class="shopping-card-icon-badge">@ViewBag.ShoppingCardCount</span>
 
 <script>
+    
+    $('#mainShoppingCardBox').click(() => {
+        alert('Funkcjonalność będzie dostępna w kolejnej wersji systemu');
+    });
+
+    $(document).ready(() => {
+        $.ajax({
+            url: '/product/productlist?category=Pieczywo',
+            dataType: 'html',
+            success: function(data) {
+                $('#productList').html(data);
+            }
+        });
+    });
+
     $('.category-item').click((e) => {
         $.ajax({
             url: `/product/productlist?category=${e.target.textContent}`,
@@ -70,4 +85,5 @@
             }
         });
     });
+
 </script>

@@ -10,14 +10,26 @@
     .product-item {
         border: 1px solid grey;
         padding: 0.8rem;
+        align-items: center;
+        display: flex;
+    }
+    
+    .product-barcode {
+        width: 10%
     }
 
     .product-name {
-        width: 25%
+        width: 20%
     }
-    
+
     .product-description {
         width: 50%;
+    }
+
+    .product-price {
+        display: flex;
+        justify-content: center;
+        width: 90px;
     }
     .product-count {
         width: 65px;
@@ -37,10 +49,11 @@
 @foreach (var product in Model)
 {
 <div class="product">
+    <div class="product-item product-barcode">@product.Barcode</div>
     <div class="product-item product-name">@product.Name</div>
     <div class="product-item product-description">@product.Description</div>
-    <div class="product-item">@product.Price zł</div>
-    <div class="product-item product-count"><input name="product-count_@product.ProductId"/></div>
+    <div class="product-item product-price">@product.Price zł</div>
+    <div class="product-item product-count"><input type="number" name="product-count_@product.ProductId" /></div>
     <div class="product-item">
         <i data-productId="@product.ProductId" class="fa fa-shopping-cart clickableCart"></i>
     </div>
